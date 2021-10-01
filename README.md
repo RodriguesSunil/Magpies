@@ -1,6 +1,6 @@
 # Magpies
 A2 Group # 10 COSC2196/2021
-# Group Members
+## Group Members
 
 |# Memebers        |Location |
 |:-----------------|:-------:|
