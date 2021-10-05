@@ -6,7 +6,7 @@
 |:-----------------|:-------:|
 |Alexander Hutton  |Perth    |
 |Raul Da Silva     |Melbourne|
-|Joao Nunes Doege  |Sydney   |
+|Joao Nunes Doege  |Newcastle|
 |Jacqueline Penas  |Brisbane |
 |Amrita Kanungo    |?        |
 |Sunil Rodrigues   |Perth    |
