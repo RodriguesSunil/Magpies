@@ -103,7 +103,7 @@ function navigate(url) {
 }
 function navigateLocal(url) {
     if (url) {
-        window.open(url);
+        location.href = url;
         return false;
     } else {
         console.error('WARNING: Navigate was called without any arguments.')
