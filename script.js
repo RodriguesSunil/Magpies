@@ -109,6 +109,10 @@ function navigate(url) {
 }
 function navigateLocal(url) {
     if (url == 'root') {
+        if (location.href != 'https:\/\/rodriguessunil.github.io/Magpies/') {
+            location.href = "https:\/\/rodriguessunil.github.io/Magpies/" + url;
+            return;
+        }
         location.href = "https:\/\/rodriguessunil.github.io/Magpies/";
     } else if (url) {
         location.href = "https:\/\/rodriguessunil.github.io/Magpies/" + url;
