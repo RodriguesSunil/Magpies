@@ -1,4 +1,4 @@
-const VERSION = '1.0.1';
+const VERSION = '1.0.2';
 
 
 
@@ -109,14 +109,13 @@ function navigate(url) {
 }
 function navigateLocal(url) {
     if (url == 'root') {
-        if (location.href != 'https:\/\/rodriguessunil.github.io/Magpies/') {
-            location.href = "https:\/\/rodriguessunil.github.io/Magpies/" + url;
-            return;
-        }
         location.href = "https:\/\/rodriguessunil.github.io/Magpies/";
+        return;
     } else if (url) {
         location.href = "https:\/\/rodriguessunil.github.io/Magpies/" + url;
+        return;
     } else {
-        console.error('WARNING: Navigate was called without any arguments.')
+        console.error('WARNING: Navigate was called without any arguments.');
+        return;
     }
 }
