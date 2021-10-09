@@ -103,7 +103,9 @@ function navigate(url) {
 }
 function navigateLocal(url) {
     if (url) {
-        location.href = url;
+        location.href = "https:\/\/rodriguessunil.github.io/Magpies/" + url;
+    } else if (url == 'root') {
+        location.href = "https:\/\/rodriguessunil.github.io/Magpies/";
     } else {
         console.error('WARNING: Navigate was called without any arguments.')
     }
