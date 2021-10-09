@@ -101,3 +101,11 @@ function navigate(url) {
         console.error('WARNING: Navigate was called without any arguments.')
     }
 }
+function navigateLocal(url) {
+    if (url) {
+        window.open(url);
+        return false;
+    } else {
+        console.error('WARNING: Navigate was called without any arguments.')
+    }
+}
