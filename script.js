@@ -1,9 +1,15 @@
+const VERSION = '1.0.1';
+
+
+
+
+
 // This file should not contain code that is to run immediately on page load.
 // By default, this file will only run once HTML and CSS has loaded.
 
 window.addEventListener('load', () => {
 
-    
+    console.log(`VERSION:   ${VERSION}`);
     
 });
 
@@ -102,10 +108,10 @@ function navigate(url) {
     }
 }
 function navigateLocal(url) {
-    if (url) {
-        location.href = "https:\/\/rodriguessunil.github.io/Magpies/" + url;
-    } else if (url == 'root') {
+    if (url == 'root') {
         location.href = "https:\/\/rodriguessunil.github.io/Magpies/";
+    } else if (url) {
+        location.href = "https:\/\/rodriguessunil.github.io/Magpies/" + url;
     } else {
         console.error('WARNING: Navigate was called without any arguments.')
     }
