@@ -11,5 +11,4 @@
 |Raul Junqueira Da Silva     |Sydney|
 |Joao Nunes Doege            |Newcastle|
 |Jacqueline Penas            |Brisbane |
-|Amrita Kanungo              |?        |
 |Sunil Rodrigues             |Perth    |
