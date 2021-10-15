@@ -20,7 +20,7 @@ page-root .page-content:last-child { margin-top: 0; }
             align-items: center;
         }
             page-root .page-content .card .image-container img {
-                height: 280px;
+                width: 200px;
                 border-radius: 14px;
             }
             page-root .page-content .card .image-container a {
@@ -43,90 +43,3 @@ page-root .page-content:last-child { margin-top: 0; }
 
 
 
-
-
-
-
-
-
-        /* q */
-        
-        #wrapper { 
-            width: 920px; 
-            height: auto; 
-            margin: 0 auto;
-        } 
-        #Meet1 { 
-            width: 47.5%; 
-            height: 300px; 
-            float: left; 
-            margin-right: 5%;
-        } 
-        #Meet2 { 
-            width: 47.5%; 
-            height: 300px; 
-            float: left; 
-        }
-        #Meet3 { 
-            width: 47.5%; 
-            height: 300px; 
-            float: left; 
-            margin-right: 5% 
-        }
-        #Meet4 { 
-            width: 47.5%; 
-            height: 300px; 
-            float: left; 
-        }
-        #Meet5 { 
-            width: 47.5%; 
-            height: 300px; 
-            float: left; 
-            margin-right: 5% 
-        }
-        #Meet6 { 
-            width: 47.5%; 
-            height: 300px; 
-            float: left; 
-        }
-        
-        .clear{
-            clear: both;
-        }
-        
-        @media (max-width:767px) {
-            #wrapper{
-                width: 100%;
-                height: auto;
-            }
-            #Meet1 {
-                width: 100%;
-                height: auto;
-                float: none;
-            }
-            #Meet2 {
-                width: 100%;
-                height: auto;
-                float: none;
-            }
-            #Meet3 {
-                width: 100%;
-                height: auto;
-                float: none;
-            }
-            #Meet4 {
-                width: 100%;
-                height: auto;
-                float: none;
-            }
-            #Meet5 {
-                width: 100%;
-                height: auto;
-                float: none;
-            }
-            #Meet6 {
-                width: 100%;
-                height: auto;
-                float: none;
-            }
-        }
