@@ -10,6 +10,10 @@ const VERSION = '1.0.2';
 window.addEventListener('load', () => {
 
     console.log(`VERSION:   ${VERSION}`);
+
+    if (location.hostname == "127.0.0.1" || location.hostname == "localhost") {
+        document.title = `[LOCAL]`;
+    }
     
 });
 
