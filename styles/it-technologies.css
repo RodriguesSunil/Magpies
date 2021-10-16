@@ -8,17 +8,24 @@ page-root section {
     display: flex;
     flex-direction: column;
 }
-page-root section.centered {
-    align-items: center;
-}
     page-root section.centered .img-full {
         width: 100%;
         text-align: center;
     }
-    page-root section.centered .content {
+    page-root section .content {
         width: 100%;
-        text-align: center;
-}
+    }
+    page-root section .content span.subtitle {
+        font-weight: 800;
+        display: block;
+        margin-top: 50px;
+    }
+    page-root section .content p {
+        line-height: calc(1em + 12px);
+    }
+
+
+
     ol {
         list-style: type;
         padding: 0;
