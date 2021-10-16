@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles/default.css">
+    <!-- page specific css file -->
+    <link rel="stylesheet" href="styles/tools.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>The Team | The Magpies [A2 Group 10]</title>
+</head>
+<body>
+    <app-container>
+        <app-header>
+            <div class="left">
+                <header-nav>
+                    <button class="icon" onclick="toggleNavState()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="currentColor"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M4 18h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zm0-5h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zM3 7c0 .55.45 1 1 1h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1z"/></svg></button>
+                    <nav-container>
+                        <button class="nav-link" onclick="navigateLocal('root')">Home</button>
+                        <button class="nav-link" onclick="navigateLocal('team-profile')">The Team</button>
+                        <button class="nav-link" onclick="navigateLocal('ideal-jobs')">Ideal Jobs</button>
+                        <button class="nav-link" onclick="navigateLocal('tools')">Tools</button>
+                        <button class="nav-link" onclick="navigateLocal('industry-data')">Industry Data</button>
+                        <button class="nav-link" onclick="navigateLocal('it-work')">IT Work</button>
+                        <button class="nav-link" onclick="navigateLocal('it-technologies')">IT Technologies</button>
+                        <button class="nav-link" onclick="navigateLocal('project-ideas')">Project Ideas</button>
+                        <button class="nav-link" onclick="navigateLocal('group-reflection')">Group Reflection</button>
+                        <button class="nav-link" onclick="navigateLocal('references')">References</button>
+                    </nav-container>
+                </header-nav>
+            </div>
+            <div class="right">
+                <div class="team-name">
+                    <div class="contacts">
+                        <div class="icon" onclick="navigate('https:\/\/github.com/s3921239')">
+                            <img src="assets/profile-img/alex.png" alt="profile-img">
+                            <div class="tooltip"><div class="arrow"></div>Alexander Hutton</div>
+                        </div>
+                        <div class="icon" onclick="navigate('https:\/\/github.com/RaulJunqueira')">
+                            <img src="assets/profile-img/raul.png" alt="profile-img">
+                            <div class="tooltip"><div class="arrow"></div>Raul Junqueira Da Silva</div>
+                        </div>
+                        <div class="icon" onclick="navigate('https:\/\/github.com/JoaoPedroNunesDoege')">
+                            <img src="assets/profile-img/joao.jpg" alt="profile-img">
+                            <div class="tooltip"><div class="arrow"></div>Joao Nunes Doege</div>
+                        </div>
+                        <div class="icon" onclick="navigate('https:\/\/github.com/JaoPen')">
+                            <img src="assets/profile-img/jacqueline.jpeg" alt="profile-img">
+                            <div class="tooltip"><div class="arrow"></div>Jacqueline Penas</div>
+                        </div>
+                        <div class="icon" onclick="navigate('https:\/\/github.com/RodriguesSunil')">
+                            <img src="assets/profile-img/sunil.jpg" alt="profile-img">
+                            <div class="tooltip"><div class="arrow"></div>Sunil Rodrigues</div>
+                        </div>
+                    </div>
+                    <tool-tip title="The Team">The&nbsp;Magpies</tool-tip>
+                </div>
+            </div>
+        </app-header>
+        <app-page-container>
+           <page-root>
+
+               <div class="hero-2">
+                    <div>
+                        <h1>IT Technologies</h1>
+                    </div>
+                    <div style="display:flex; justify-content:center;">
+                        <img src="assets/logo.png" alt="magpies-logo" class="side-img" width="120px" style="transform:scaleX(-1);">
+                    </div>
+                </div>
+
+                <div class="page-content">
+
+                    <div class="card">
+                        <div class="image-container">
+                            <img src="assets/tools/ms-teams-logo.svg" alt="img">
+                            <a
+                            href="https://github.com/RodriguesSunil/Magpies"
+                            title="MS Teams"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >Microsoft Teams - Magpies </a>
+                        </div>
+                        <div class="content-container">
+                            <h1>Microsoft Teams</h1>
+                            <p>
+                                Microsoft Teams was the tool chosen by the group as our repository for storage of documents, booking meetings, and chat amongst the group members. It also served as a calendar for reminders. Meetings were organised through Teams and each meeting had a designated person for taking minutes. The meetings were recorded so we could go back to them to view and listen to what we discussed. Minutes of the meetings are taken by a team member and posted to the folder in Teams. Teams served the group as a collaboration tool to discuss issues and get peer reviews of the work assigned.
+                            </p>
+                            <p>
+                                You can find our Microsoft Team at 
+                                <a
+                                    href="https://teams.microsoft.com/_#/school/files/General?threadId=19%3AWH7vqEd1wC9VpBO-gbQNzpi098orWaIfHGKP3A9gK4w1%40thread.tacv2&ctx=channel&context=General&rootfolder=%252Fsites%252FGroup10945%252FShared%2520Documents%252FGeneral"
+                                    title="Magpies - Microsoft Teams"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >this link</a>.
+                            </p> 
+                        </div>
+                    </div>
+
+                </div>
+
+
+           </page-root>
+        </app-page-container>
+    </app-container>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
