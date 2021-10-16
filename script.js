@@ -1,7 +1,4 @@
-const VERSION = '1.0.2';
-
-
-
+const VERSION = '1.0.8';
 
 
 // This file should not contain code that is to run immediately on page load.
@@ -12,13 +9,15 @@ window.addEventListener('load', () => {
     console.log(`VERSION:   ${VERSION}`);
 
     if (location.hostname == "127.0.0.1" || location.hostname == "localhost") {
-        document.title = `[LOCAL]`;
+        document.title = `Local Instance`;
     }
+
+    // FOR DEV ONLY: Adds run_id to header for easy debugging
+    document.querySelector('.left').innerHTML += `<span style='margin-left:1em; opacity:0.25;'>${VERSION}</span>`;
     
 });
 
-// let oldPageScrollPos = 0
-// let newPageScrollPos = 0
+
 const pageRoot = document.getElementsByTagName('app-page-container')[0];
 const header = document.getElementsByTagName('app-header')[0];
 const headerLeft = header.querySelector('.left');
@@ -31,7 +30,6 @@ window.addEventListener('scroll', () => {
 
 
     if (window.scrollY > 75) {
-        console.log("Down");
         header.style.height = "48px";
         headerLeft.style.padding = "0 4px";
         teamMagpies.style.paddingRight = "0.8em";
@@ -45,7 +43,6 @@ window.addEventListener('scroll', () => {
         });
 
     } else {
-        console.log("Up");
         header.style.height = "75px";
         headerLeft.style.padding = "0 1em";
         teamMagpies.style.paddingRight = "1em";
@@ -62,24 +59,6 @@ window.addEventListener('scroll', () => {
 });
 
 
-
-// contains the up/down movement
-// window.addEventListener('scroll', (e) => {
-//     newPageScrollPos = window.scrollY;
-//     if (oldPageScrollPos < newPageScrollPos) {
-//         if (newPageScrollPos > 30) {
-//             console.log("Down");
-//             header.style.minHeight = "48px";
-//             header.style.padding = "0 0.6em";
-//         }
-//     } else if (oldPageScrollPos > newPageScrollPos) {
-//         console.log("Up");
-//         header.style.minHeight = "75px";
-//         header.style.padding = "0 1em";
-//         pageRoot.style.top = "75px";
-//     }
-//     oldPageScrollPos = newPageScrollPos;
-// });
 
 var navState = false;
 
