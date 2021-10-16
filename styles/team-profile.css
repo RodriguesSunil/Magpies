@@ -25,17 +25,6 @@ page-root .team-profile:last-child { margin-top: 0; }
                 height: 280px;
                 border-radius: 14px;
             }
-            page-root .team-profile .profile .image-container a {
-                color: var(--primary-color, #616161);
-                text-decoration: inherit;
-                font-weight: 500;
-                font-size: 15px;
-                margin-top: 14px;
-            }
-            page-root .team-profile .profile .image-container a:hover {
-                color: var(--primary-color, #616161);
-                text-decoration: underline;
-            }
         page-root .team-profile .profile .content-container {
             padding: 1em;
             font-size: 16px;

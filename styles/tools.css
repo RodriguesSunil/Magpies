@@ -30,17 +30,6 @@ page-root .page-content:last-child { margin-top: 0; }
                 width: 200px;
                 border-radius: 14px;
             }
-            page-root .page-content .card .image-container a {
-                color: var(--primary-color, #616161);
-                text-decoration: inherit;
-                font-weight: 500;
-                font-size: 15px;
-                margin-top: 14px;
-            }
-            page-root .page-content .card .image-container a:hover {
-                color: var(--primary-color, #616161);
-                text-decoration: underline;
-            }
         page-root .page-content .card .content-container {
             padding: 1em;
             font-size: 16px;

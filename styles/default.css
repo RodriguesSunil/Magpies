@@ -493,4 +493,16 @@ app-page-container page-root .hero-2 .side-img {
 app-page-container page-root .hero-2 .side-img img {
   width: 120px;
 }
+
+app-page-container page-root a {
+  color: var(--primary-color, #616161);
+  text-decoration: inherit;
+  font-weight: 500;
+  font-size: inherit;
+}
+
+app-page-container page-root a:hover {
+  text-decoration: underline;
+  background-color: var(--panel-color, #fff);
+}
 /*# sourceMappingURL=default.css.map */

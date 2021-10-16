@@ -399,6 +399,18 @@ app-page-container {
         }
 
 
+        a {
+            color: var(--primary-color, #616161);
+            text-decoration: inherit;
+            font-weight: 500;
+            font-size: inherit;
+            
+            &:hover {
+                text-decoration: underline;
+                background-color: var(--panel-color, #fff);
+            }
+        }
+
 
 
     }
