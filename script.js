@@ -10,10 +10,9 @@ window.addEventListener('load', () => {
 
     if (location.hostname == "127.0.0.1" || location.hostname == "localhost") {
         document.title = `Local Instance`;
+        // FOR DEV ONLY: Adds run_id to header for easy debugging
+        document.querySelector('.left').innerHTML += `<span style='margin-left:1em; opacity:0.25;'>${VERSION}</span>`;
     }
-
-    // FOR DEV ONLY: Adds run_id to header for easy debugging
-    document.querySelector('.left').innerHTML += `<span style='margin-left:1em; opacity:0.25;'>${VERSION}</span>`;
     
 });
 
