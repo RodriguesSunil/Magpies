@@ -9,25 +9,8 @@ page-root .page-content:last-child { margin-top: 0; }
         display: flex;
         justify-content: space-around;
         align-items: center;
-        gap: 1.2em;
-        padding: 1.2em;
-        margin-bottom: 2.5em;
+        padding: 0.1em 1.2em;
     }
-            page-root .page-content .card.thumbnail-collection {
-                flex-wrap: wrap;
-                gap: 0.4em;
-                justify-content: center;
-            }
-    page-root .page-content .card:last-child { margin-bottom: 0; }
-        page-root .page-content .card .image-container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-            page-root .page-content .card .image-container img {
-                border-radius: 14px;
-            }
         page-root .page-content .card .content-container {
             padding: 1em;
             font-size: 16px;
