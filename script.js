@@ -90,14 +90,42 @@ function navigate(url) {
     }
 }
 function navigateLocal(url) {
-    if (url == 'root') {
-        location.href = "https:\/\/rodriguessunil.github.io/Magpies/";
-        return;
-    } else if (url) {
-        location.href = "https:\/\/rodriguessunil.github.io/Magpies/" + url;
-        return;
+    if (location.hostname == "127.0.0.1" || location.hostname == "localhost") {
+        if (url == 'root') {
+            location.href = "http:\/\/127.0.0.1:5500/";
+            return;
+        } else if (url) {
+            location.href = "http:\/\/127.0.0.1:5500/" + url + ".html";
+            return;
+        } else {
+            console.error('WARNING: Navigate was called without any arguments.');
+            return;
+        }
     } else {
-        console.error('WARNING: Navigate was called without any arguments.');
-        return;
+        if (url == 'root') {
+            location.href = "https:\/\/rodriguessunil.github.io/Magpies/";
+            return;
+        } else if (url) {
+            location.href = "https:\/\/rodriguessunil.github.io/Magpies/" + url;
+            return;
+        } else {
+            console.error('WARNING: Navigate was called without any arguments.');
+            return;
+        }
     }
+
+
+
+
+    // legacy
+    // if (url == 'root') {
+    //     location.href = "https:\/\/rodriguessunil.github.io/Magpies/";
+    //     return;
+    // } else if (url) {
+    //     location.href = "https:\/\/rodriguessunil.github.io/Magpies/" + url;
+    //     return;
+    // } else {
+    //     console.error('WARNING: Navigate was called without any arguments.');
+    //     return;
+    // }
 }
