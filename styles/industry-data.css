@@ -70,8 +70,12 @@ page-root section {
                 border-top-right-radius: 0;
                 border-bottom-right-radius: 0;
             }
+            page-root section tr td:nth-child(2), page-root section tr td:nth-child(3), page-root section tr td:nth-child(4), page-root section tr td:nth-child(5) {
+                text-align: center;
+            }
             page-root section tr:first-child {
                 font-weight: bold;
+                text-align: left !important;
             }
             page-root section tr td:last-child {
                 border-top-left-radius: 0;
